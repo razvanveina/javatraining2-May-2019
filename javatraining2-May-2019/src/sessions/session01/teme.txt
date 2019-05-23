@@ -1,0 +1,2 @@
+1. Sa se implementeze un program care citeste un fisier ce contine numere intregi, un numar pe fiecare linie si
+afiseaza suma lor. 
