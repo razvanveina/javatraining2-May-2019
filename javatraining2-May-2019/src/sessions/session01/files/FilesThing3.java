@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class FilesThing2 {
+public class FilesThing3 {
 	public static void main(String[] args) throws IOException {
 		readFile();
 	}
@@ -20,7 +20,11 @@ public class FilesThing2 {
 				break;
 			}
 
-			sum += Integer.parseInt(s);
+			String[] splits = s.split(",");
+
+			for (String ss : splits) {
+				sum += Integer.parseInt(ss);
+			}
 		}
 		System.out.println(sum);
 		br.close();

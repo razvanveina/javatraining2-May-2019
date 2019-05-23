@@ -12,9 +12,20 @@ public class Person {
 		this.glasses = glasses;
 	}
 
+	public Person(String text) {
+		String[] splits = text.split(",");
+		name = splits[0];
+		age = Integer.parseInt(splits[1]);
+		glasses = Boolean.parseBoolean(splits[2]);
+	}
+
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + ", glasses=" + glasses + "]";
+	}
+
+	public String toFileFormat() {
+		return name + "," + age + "," + glasses;
 	}
 
 }
