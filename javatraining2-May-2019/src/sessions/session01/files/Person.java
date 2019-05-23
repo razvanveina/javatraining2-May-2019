@@ -3,9 +3,12 @@ package sessions.session01.files;
 import java.io.Serializable;
 
 public class Person implements Serializable {
+	private static final long serialVersionUID = 2L;
+
 	private String name;
 	private int age;
 	private boolean glasses;
+	private int salary;
 
 	public Person(String name, int age, boolean glasses) {
 		super();
@@ -23,7 +26,7 @@ public class Person implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", glasses=" + glasses + "]";
+		return "Person [name=" + name + ", age=" + age + ", glasses=" + glasses + salary + "]";
 	}
 
 	public String toFileFormat() {
