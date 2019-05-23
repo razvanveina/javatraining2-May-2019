@@ -1,6 +1,8 @@
 package sessions.session01.files;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
 	private String name;
 	private int age;
 	private boolean glasses;
