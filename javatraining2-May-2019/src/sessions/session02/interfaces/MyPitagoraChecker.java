@@ -6,7 +6,11 @@ public class MyPitagoraChecker extends Object implements PitagoraChecker, Serial
 
 	@Override
 	public boolean check(int a, int b, int c) {
-		return false;
+		return a * a + b * b == c * c;
 	}
 
+	@Override
+	public void metDefault() {
+		PitagoraChecker.super.metDefault();
+	}
 }
