@@ -3,7 +3,7 @@ package sessions.session02.tema;
 public class Soldier extends Unit {
 
 	public Soldier(String name) {
-		super(name);
+		super(name, UnitType.SOLDIER);
 	}
 
 	@Override

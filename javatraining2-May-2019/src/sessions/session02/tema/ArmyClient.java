@@ -22,7 +22,7 @@ public class ArmyClient {
 		System.out.println(army1.getFirepower());
 		System.out.println(army2.getFirepower());
 
-		BattleSimulator bs = new BattleSimulator(army1, army2);
+		BattleSimulator2 bs = new BattleSimulator2(army1, army2);
 		bs.simulate();
 	}
 

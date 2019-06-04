@@ -37,4 +37,23 @@ public class Army {
 			}
 		}
 	}
+
+	public void simulateLife(double probability, UnitType type) {
+		for (Unit unit : units) {
+			double random = Math.random();
+			if (unit.getType().equals(type) && unit.isAlive() && random > probability) {
+				unit.kill();
+			}
+		}
+	}
+
+	public int getFirepower(UnitType type) {
+		int sum = 0;
+		for (Unit unit : units) {
+			if (unit.getType().equals(type) && unit.isAlive()) {
+				sum += unit.getFirepower();
+			}
+		}
+		return sum;
+	}
 }

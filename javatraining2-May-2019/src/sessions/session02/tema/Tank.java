@@ -6,7 +6,7 @@ public class Tank extends Unit {
 	private int bullets;
 
 	public Tank(String name, int projectiles, int bullets) {
-		super(name);
+		super(name, UnitType.TANK);
 		this.projectiles = projectiles;
 		this.bullets = bullets;
 	}
