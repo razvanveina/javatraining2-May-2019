@@ -11,4 +11,8 @@ public class Soldier extends Unit {
 		return 1;
 	}
 
+	public String getName() {
+		return name;
+	}
+
 }
