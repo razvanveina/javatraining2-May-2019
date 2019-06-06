@@ -32,9 +32,10 @@ public class FileThing {
 
 	private static void writeFile() throws FileNotFoundException {
 		PrintWriter pw = new PrintWriter(new File("output/test.txt"));
-		pw.println("qwe");
-		pw.println("asd");
-		pw.println("zxc");
+		pw.print("qwe" + System.lineSeparator() + "asd" + System.lineSeparator() + "zxc\n");
+//		pw.println("qwe");
+//		pw.println("asd");
+//		pw.println("zxc");
 		pw.close();
 	}
 
