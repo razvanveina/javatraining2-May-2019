@@ -1,0 +1,5 @@
+/chlang=Change language
+/exit=Exit
+/en=English
+/ro=Romanian
+/back=Back

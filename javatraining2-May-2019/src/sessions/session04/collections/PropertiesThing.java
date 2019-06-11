@@ -9,6 +9,7 @@ public class PropertiesThing {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		Properties prop = new Properties();
 		prop.load(new FileInputStream("messages_ro.txt"));
+
 		System.out.println(prop.getProperty("/chlang"));
 		System.out.println(prop.getProperty("/chlang1", "!/chlang1"));
 

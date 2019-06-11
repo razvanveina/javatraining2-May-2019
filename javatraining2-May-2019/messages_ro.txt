@@ -1,2 +1,5 @@
 /chlang=Schimba limba
 /exit=Iesire
+/en=Engleza
+/ro=Romana
+/back=Inapoi
