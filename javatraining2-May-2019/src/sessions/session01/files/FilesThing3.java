@@ -6,8 +6,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class FilesThing3 {
-	public static void main(String[] args) throws IOException {
-		readFile();
+	public static void main(String[] args) {
+		try {
+			readFile();
+		} catch (IOException e) {
+			System.out.println("Fisierul nu exista");
+		}
 	}
 
 	private static void readFile() throws IOException {
@@ -23,7 +27,12 @@ public class FilesThing3 {
 			String[] splits = s.split(",");
 
 			for (String ss : splits) {
-				sum += Integer.parseInt(ss);
+				try {
+					int nr = Integer.parseInt(ss);
+					sum += nr;
+				} catch (NumberFormatException e) {
+					System.out.println("Invalid number: " + ss);
+				}
 			}
 		}
 		System.out.println(sum);
