@@ -1,4 +1,4 @@
-package sessions.session05.menus;
+package com.savnet.utils.menus;
 
 public abstract class MenuItem {
 	private String key;
