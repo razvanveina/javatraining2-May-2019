@@ -25,6 +25,11 @@ public class Menu extends MenuItem {
 			String option = scanner.nextLine();
 			MenuItem item = getMenuItemByOption(option);
 
+			if (item == null) {
+				System.out.println("Invalid option");
+				continue;
+			}
+
 			if (item == backAction) {
 				return;
 			}
