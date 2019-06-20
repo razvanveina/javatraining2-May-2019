@@ -6,18 +6,18 @@ public class Person {
 
 	public Person(String name, int age) {
 		super();
-		this.name = name;
+		this.setName(name);
 		this.age = age;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + "]" + hashCode();
+		return "Person [name=" + getName() + ", age=" + age + "]" + hashCode();
 	}
 
 	@Override
 	public int hashCode() {
-		return ((name == null) ? 0 : name.hashCode());
+		return ((getName() == null) ? 0 : getName().hashCode());
 	}
 
 	@Override
@@ -29,12 +29,20 @@ public class Person {
 		if (getClass() != obj.getClass())
 			return false;
 		Person other = (Person) obj;
-		if (name == null) {
-			if (other.name != null)
+		if (getName() == null) {
+			if (other.getName() != null)
 				return false;
-		} else if (!name.equals(other.name))
+		} else if (!getName().equals(other.getName()))
 			return false;
 		return true;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
